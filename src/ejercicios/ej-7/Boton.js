@@ -1,13 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Boton = () => {
-    
-    const sumaClick = () => {
-        // Ingresa aquí tu código para aumentar el contador
-    }
+const Boton = (props) => {
 
     return (
-        <button className="btn btn-info" onClick={sumaClick}>suma 1</button>
+        <button className="btn btn-info" onClick={props.sumaClick}>suma 1</button>
     );
 };
 

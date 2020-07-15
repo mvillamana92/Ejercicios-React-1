@@ -5,11 +5,11 @@ const Padre = () => {
     const printCustomText = (text) => {
         console.log(text);
     };
-    
+
     return (
         <div className="alert alert-primary">
             <h4>Padre</h4>
-            <Hijo />
+            <Hijo myFunction={printCustomText} />
         </div>
     );
 };

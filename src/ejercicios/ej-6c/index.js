@@ -1,10 +1,12 @@
 import React from 'react';
 import Contador from './Contador';
 
-const Ejercicio6c = () => {
-    return (
-        <Contador />
-    );
+class Ejercicio6c extends React.Component {
+    render() {
+        return (
+            <Contador />
+        );
+    }
 };
 
 export default Ejercicio6c;

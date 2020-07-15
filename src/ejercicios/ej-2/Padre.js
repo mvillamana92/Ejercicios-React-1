@@ -5,11 +5,11 @@ const Padre = () => {
     const printText = () => {
         console.log("Luke, yo soy tu padre");
     };
-    
+
     return (
         <div className="alert alert-primary">
             <h4>Padre</h4>
-            <Hijo />
+            <Hijo printText={printText} />
         </div>
     );
 };

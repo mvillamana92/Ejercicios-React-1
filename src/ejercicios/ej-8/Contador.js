@@ -11,16 +11,24 @@ const Contador = () => {
         return num % 2 === 0;
     }
 
+
     // PISTA: Puedes utilizar operadores ternarios
     // PISTA 2: https://reactjs.org/docs/conditional-rendering.html
+
+    // let show;
+    // if (soyPar(counter) === true) {
+    //     show = <Par />
+    // } else {
+    //     show = <Impar />
+    // }
 
     return (
         <div className="alert alert-primary">
             <p>Has dado {counter} clicks</p>
             <button onClick={() => setCounter(counter + 1)}>suma 1</button>
-            <Par />
-            <Impar />
-        </div>
+            {/* {show} */}
+            {soyPar(counter) ? <Par /> : <Impar />}
+        </div >
     );
 };
 
