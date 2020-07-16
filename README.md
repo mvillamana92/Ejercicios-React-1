@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Guía básica de REACT
 
-## Available Scripts
+Con este proyecto podrás aplicar los conocimientos básicos de React en una serie de ejercicios.
 
-In the project directory, you can run:
+## Cómo configurar el proyecto
 
-### `npm start`
+### 1. Crear una copia del proyecto en tu cuenta de github (fork)
+El primer paso es realizar un "fork" del proyecto en tu cuenta de github, para realizar eso solo debes dar click en el botón `Fork` que verás arriba a la izquierda en la página del repositorio del proyecto.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Alt Fork button](https://www.linode.com/docs/development/version-control/how-to-install-git-and-clone-a-github-repository/github-fork.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Deberías poder ver en tu cuenta un nuevo repositorio que contiene una copia del proyecto original.
 
-### `npm test`
+### 2. Clonar el repositorio en tu máquina local
+Después, clona el nuevo repositorio de tu cuenta en tu máquina local con el siguiente comando. Asegurate de no clonar el repositorio original.
+```
+git clone <url_del_repositorio>
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Añadir al proyecto local una referencia del proyecto original
+Ahora, vamos a añadir una referencia al repositorio original. Esto nos será de utilidad cuando haya una actualización del proyecto original y querramos incluir el cambio en nuestro proyecto local.
+Para esto deberás ejecutar el siguiente comando.
+```
+git remote add upstream https://github.com/Hub-Escuela/Ejercicios-React-1
+```
 
-### `npm run build`
+### 4. Instalar dependencias
+```
+cd <ruta_de _tu_proyecto_local>
+npm install
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 5. Iniciar el proyecto
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Actualizaciones del repositorio
+Si se realiza algún cambio en repositorio original podrás realizar una actualización del proyecto local con los siguientes comandos:
+```
+git fetch upstream # Obtener nuevos cambios del proyecto de HUB
+git checkout master # Seleccionar el branch principal de nuestro proyecto
+git merge upstream/master # Añadir los nuevos cambios descargados a nuestro proyecto
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

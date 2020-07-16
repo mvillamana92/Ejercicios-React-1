@@ -78,6 +78,46 @@ const exData = [
         title: "Ejercicio 8C - Renderizado condicional",
         description: "Modifica el componente <> para que cuando el contador sea número par se muestre el componente <Par> y, si el número es non, mostrar el componente <Impar>",
         url: "ej-8c"
+    },
+    {
+        title: "Ejercicio 9 - Async/await consultar mi ip",
+        description: "Añadir los cambios necesarios para mostrar por pantalla tu ip haciendo uso del api https://api.ipify.org/?format=json",
+        url: "ej-9"
+    },
+    {
+        title: "Ejercicio 10 - Async/await consultar mi ip con error",
+        description: "Con lo aprendido en el ejercicio anterior, utilizar un api que falla https://api.ipify.org/pepe/?format=json y que en caso de error mostrar como ip 'Error'.",
+        url: "ej-10"
+    },
+    {
+        title: "Ejercicio 11 - Async/await consultar mi ip con renderizado condicional",
+        description: "Aplicar la solución del Ejercicio 9 para que cuando carguemos la página se muestre Cargando... hasta que recuperemos la ip con el api.",
+        url: "ej-11"
+    },
+    {
+        title: "Ejercicio 12 - Async/await sobre botón",
+        description: "Al hacer clic sobre el botón, llamar a la API, recuperar el texto de la propiedad 'value' y mostrarlo por pantalla. API: https://api.chucknorris.io/jokes/random",
+        url: "ej-12"
+    },
+    {
+        title: "Ejercicio 9F - Async/await consultar mi ip",
+        description: "Añadir los cambios necesarios para mostrar por pantalla tu ip haciendo uso del api https://api.ipify.org/?format=json",
+        url: "ej-9f"
+    },
+    {
+        title: "Ejercicio 10F - Async/await consultar mi ip con error",
+        description: "Con lo aprendido en el ejercicio anterior, utilizar un api que falla https://api.ipify.org/pepe/?format=json y que en caso de error mostrar como ip 'Error'.",
+        url: "ej-10f"
+    },
+    {
+        title: "Ejercicio 11F - Async/await consultar mi ip con renderizado condicional",
+        description: "Aplicar la solución del Ejercicio 9 para que cuando carguemos la página se muestre Cargando... hasta que recuperemos la ip con el api.",
+        url: "ej-11f"
+    },
+    {
+        title: "Ejercicio 12F - Async/await sobre botón",
+        description: "Al hacer clic sobre el botón, llamar a la API, recuperar el texto de la propiedad 'value' y mostrarlo por pantalla. API: https://api.chucknorris.io/jokes/random",
+        url: "ej-12f"
     }
 ];
 
