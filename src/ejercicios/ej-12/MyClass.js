@@ -7,7 +7,6 @@ class MyClass extends React.Component {
         this.state = { chuckFact: '...' };
     }
 
-
     handleClick = async () => {
         const chuckFact = await getFact();
         this.setState({ ...this.state, chuckFact: chuckFact.value })

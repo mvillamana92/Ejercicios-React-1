@@ -128,6 +128,11 @@ const exData = [
         title: "Ejercicio 14 - Inversión de control",
         description: "Refactorizar el siguiente código para seguir el principio de inversión de control",
         url: "ej-14"
+    },
+    {
+        title: "Ejercicio 15 - Implementación de UseEffect",
+        description: "Debes implementar múltiples useEffect de acuerdo a las especificaciones que verás en los comentarios del código, no está permitido modificar el código fuera del bloque indicado. ",
+        url: "ej-15"
     }
 ];
 
