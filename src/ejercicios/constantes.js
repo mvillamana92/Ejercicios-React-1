@@ -118,6 +118,16 @@ const exData = [
         title: "Ejercicio 12F - Async/await sobre botón",
         description: "Al hacer clic sobre el botón, llamar a la API, recuperar el texto de la propiedad 'value' y mostrarlo por pantalla. API: https://api.chucknorris.io/jokes/random",
         url: "ej-12f"
+    },
+    {
+        title: "Ejercicio 13 - Contención",
+        description: "Mediante contención utilizando {props.children} enlazar los dos componentes del ejercicio. Por un lado tenemos un layout con un header y footer, y por otro lado un Hola Mundo",
+        url: "ej-13"
+    },
+    {
+        title: "Ejercicio 14 - Inversión de control",
+        description: "Refactorizar el siguiente código para seguir el principio de inversión de control",
+        url: "ej-14"
     }
 ];
 
