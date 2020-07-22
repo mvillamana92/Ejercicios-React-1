@@ -26,3 +26,4 @@ export { default as Ejercicio13 } from "./ej-13";
 export { default as Ejercicio14 } from "./ej-14";
 export { default as Ejercicio15 } from "./ej-15";
 export { default as Ejercicio16 } from "./ej-16";
+export { default as Ejercicio17 } from "./ej-17";
