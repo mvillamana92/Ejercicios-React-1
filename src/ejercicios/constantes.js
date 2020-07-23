@@ -140,7 +140,7 @@ const exData = [
         url: "ej-16"
     },
     {
-        
+
         title: "Ejercicio 17 - Context API",
         description: "Implementa una aplicación con la estructura que se muestra en el diagrama. La aplicación debe cumplir los siguientes requisitos:",
         descriptionList: ["Utiliza esta url para obtener la información de los posts: https://jsonplaceholder.typicode.com/posts",
@@ -150,6 +150,19 @@ const exData = [
             "Crea un context diferente para cada tipo de información, uno para Posts y uno para Users",
         ],
         url: "ej-17"
+    },
+    {
+        title: "Ejercicio 18 - Context API (parte 2)",
+        description: "Implementa una aplicación con la estructura que se muestra en el diagrama. La plicación debe cumplir los siguiente requisitos:",
+        descriptionList: ["Utiliza esta url para obtener la información de los posts: https://jsonplaceholder.typicode.com/posts",
+            "Utiliza esta url para obtener los comentarios de un post en particular (ej post id = 1): https://jsonplaceholder.typicode.com/comments?postId=1",
+            "Debes utilizar Context API para compartir información entre los componentes",
+            "En el componente CommentsGrid se mostrarán los comentarios del Post que haya seleccionado el usuario.",
+            "El componente responsable de obtener los posts de la API será PostsGrid.",
+            "El componente responsable de obtener los comentarios de un post de la API será CommentsGrid",
+            "Si el usuario selecciona un post diferente se debe limpiar el array de comments y obtener los nuevos. Nunca mezclar comentarios de diferentes posts."
+        ],
+        url: "ej-18"
     }
 ];
 
