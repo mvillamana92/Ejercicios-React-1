@@ -15,6 +15,7 @@ const Home = () => {
                         <li>Ciclo de vida los componentes</li>
                         <li>Efectos (hooks, useEffect)</li>
                         <li>Uso de componentes funcionales y de clase</li>
+                        <li>Context API</li>
                         <li>(Pronto más temas...)</li>
                     </ul>
                 </div>
@@ -30,12 +31,22 @@ const Home = () => {
                 Para resolver los ejercicios que terminan en "F", el alumno tendrá que resolver el mismo problema que el ejercicio original pero convirtiendolo a componentes funcionales. Ejemplo: Ejercicio 9F es igual a Ejercicio 9 pero resolviéndolo con funciones.
             </p>
             <p>Una vez descargado el proyecto por primera vez ejecuta el comando <b>'npm install'</b> dentro del directorio del proyecto para instalar todas las dependencias antes de que inicies.</p>
-            <p className="text-left">
-                Ejercicios disponibles:
-                {exData.map(({title, url},i) => 
-                    <li key={`key-list-home-${i}`}><a href={`/${url}`}>{title}</a></li>
+            <div className="row">
+                <div className="col"><h4>Ejercicios disponibles:</h4></div>
+            </div>
+            <div className="text-left row">
+                {exData.map(({ title, url }, i) =>
+                    <div className="col-12 col-sm-6  h-100 py-3" key={`key-list-home-${i}`}>
+                        <div className="card">
+                            <div className="card-body">
+                                <div className="card-title font-weight-bold">{title}</div>
+                                <div><a className="btn btn-success" href={`/${url}`}>ir ></a></div>
+                            </div>
+
+                        </div>
+                    </div>
                 )}
-            </p>
+            </div>
         </div>
     );
 };
